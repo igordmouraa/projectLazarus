@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, MaskEdit,
-  uModels, view.pesquisa_produtos,Produto.Repositorio;
+  uModels, view.pesquisa_produtos, Produto.Repositorio;
 
 type
   TProdutoOp = (opIncluir, opAlterar);
@@ -22,7 +22,6 @@ type
     lblCodBar: TLabel;
     lblPrc: TLabel;
     lblDesc: TLabel;
-
     procedure FormCreate(Sender: TObject);
     procedure btnSalvarClick(Sender: TObject);
     procedure btnCancelarClick(Sender: TObject);
@@ -51,7 +50,7 @@ begin
   if Trim(edtDesc.Text) = '' then
     raise Exception.Create('O campo Descrição é obrigatório!');
 
-  if Trim(edtPrc.Text) = '' then
+  if Trim(edtCodBar.Text) = '' then
     raise Exception.Create('O campo Código de Barras é obrigatório!');
 
   if Trim(edtPrc.Text) = '' then
@@ -68,7 +67,7 @@ end;
 procedure TViewProduto.PreencheModel;
 begin
   FProdutoModel.Descricao := edtDesc.Text;
-  FProdutoModel.CodigoBarras := edtPrc.Text;
+  FProdutoModel.CodigoBarras := edtCodBar.Text;
   FProdutoModel.Preco := StrToFloat(edtPrc.Text);
 end;
 
@@ -76,10 +75,11 @@ procedure TViewProduto.SetModel(AValue: TProduto);
 begin
   FProdutoModel := AValue;
   edtDesc.Text := FProdutoModel.Descricao;
-  edtPrc.Text := FProdutoModel.CodigoBarras;
+  edtCodBar.Text := FProdutoModel.CodigoBarras;
   edtCodBar.ReadOnly := True;
   edtPrc.Text := FloatToStr(FProdutoModel.Preco);
   Self.Caption := 'Editando Produto';
+  FOperacao := opAlterar;
 end;
 
 function TViewProduto.GetModel: TProduto;
@@ -90,7 +90,6 @@ end;
 procedure TViewProduto.FormCreate(Sender: TObject);
 begin
   FOperacao := opIncluir;
-  edtCodBar.ReadOnly := False;
   Self.Caption := 'Novo Produto';
 end;
 
@@ -108,10 +107,7 @@ begin
   try
     if LPesq.ShowModal = mrOk then
     begin
-
       SetModel(LPesq.ProdutoSelecionado);
-
-      FOperacao := opAlterar;
     end;
   finally
     LPesq.Free;
@@ -125,7 +121,7 @@ begin
 
     if FOperacao = opIncluir then
     begin
-      if (TProdutoRepositorio.ExisteProdutoCadastrado(edtPrc.Text) >= 0) then
+      if (TProdutoRepositorio.ExisteProdutoCadastrado(edtCodBar.Text) >= 0) then
         raise Exception.Create('Já existe um produto com este Código de Barras!');
     end;
 

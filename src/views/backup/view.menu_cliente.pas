@@ -83,7 +83,6 @@ begin
   Self.Caption := 'Novo Cliente';
 end;
 
-
 procedure TViewCliente.btnCancelarClick(Sender: TObject);
 begin
   Self.ModalResult := mrCancel;

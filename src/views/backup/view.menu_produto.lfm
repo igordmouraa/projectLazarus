@@ -6,6 +6,7 @@ object ViewProduto: TViewProduto
   Caption = 'ViewProduto'
   ClientHeight = 282
   ClientWidth = 516
+  LCLVersion = '4.0.0.4'
   OnCreate = FormCreate
   object lblDesc: TLabel
     Left = 24

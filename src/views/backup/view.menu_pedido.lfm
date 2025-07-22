@@ -111,6 +111,15 @@ object ViewPedido: TViewPedido
       TabOrder = 1
       OnClick = btnCancelarClick
     end
+    object btnPesquisarPedidos: TButton
+      Left = 8
+      Height = 35
+      Top = 88
+      Width = 128
+      Caption = 'Pesquisar Pedidos'
+      TabOrder = 2
+      OnClick = btnPesquisarPedidosClick
+    end
   end
   object grdItens: TDBGrid
     Left = 0
@@ -121,6 +130,7 @@ object ViewPedido: TViewPedido
     Color = clWindow
     Columns = <>
     DataSource = dsItens
+    ReadOnly = True
     TabOrder = 2
   end
   object btnAdicionarItem: TButton
@@ -134,12 +144,12 @@ object ViewPedido: TViewPedido
   end
   object cdsItens: TMemDataset
     FieldDefs = <>
-    Left = 80
-    Top = 320
+    Left = 208
+    Top = 296
   end
   object dsItens: TDataSource
     DataSet = cdsItens
-    Left = 24
-    Top = 320
+    Left = 152
+    Top = 296
   end
 end

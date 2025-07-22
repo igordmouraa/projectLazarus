@@ -11,9 +11,9 @@ uses
 type
   { TViewPesquisaClientes }
   TViewPesquisaClientes = class(TForm)
-    grdPesquisar: TDBGrid;
     dsControl: TDataSource;
     cdsControl: TMemDataset;
+    grdPesquisar: TDBGrid;
     pnlPesquisa: TPanel;
     procedure FormCreate(Sender: TObject);
     procedure grdPesquisaDblClick(Sender: TObject);

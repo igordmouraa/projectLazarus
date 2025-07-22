@@ -23,7 +23,7 @@ uses
   //Repositorios
   Cliente.Repositorio,
   Produto.Repositorio,
-  Pedido.Repositorio;
+  Pedido.Repositorio, view.pesquisa_pedidos, view.detalhe_pedido;
 
 {$R *.res}
 
@@ -37,5 +37,7 @@ begin
   Application.CreateForm(TViewPrincipal, ViewPrincipal);
   Application.CreateForm(TViewPesquisaProdutos, ViewPesquisaProdutos);
   Application.CreateForm(TViewPedido, ViewPedido);
+  Application.CreateForm(TViewPesquisaPedidos, ViewPesquisaPedidos);
+  Application.CreateForm(TViewDetalhePedido, ViewDetalhePedido);
   Application.Run;
 end.

@@ -37,7 +37,6 @@ procedure TViewPesquisaProdutos.FormCreate(Sender: TObject);
 var
   LProduto: TProduto;
 begin
-  // GARANTE que o dataset esteja fechado antes de mudar a estrutura
   if cdsControl.Active then
     cdsControl.Close;
 
@@ -77,7 +76,6 @@ begin
   end;
 
   Self.ModalResult := mrOk;
-  Self.Close;
 end;
 
 end.

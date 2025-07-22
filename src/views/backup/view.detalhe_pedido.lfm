@@ -1,0 +1,47 @@
+object ViewDetalhePedido: TViewDetalhePedido
+  Left = 266
+  Height = 333
+  Top = 32
+  Width = 500
+  Caption = 'ViewDetalhePedido'
+  ClientHeight = 333
+  ClientWidth = 500
+  object pnlPedido: TPanel
+    Left = 0
+    Height = 50
+    Top = 0
+    Width = 500
+    Align = alTop
+    ClientHeight = 50
+    ClientWidth = 500
+    TabOrder = 0
+    object lblInfo: TLabel
+      Left = 16
+      Height = 18
+      Top = 16
+      Width = 155
+      Caption = 'Informações do Pedido'
+    end
+  end
+  object grdItens: TDBGrid
+    Left = 0
+    Height = 283
+    Top = 50
+    Width = 500
+    Align = alClient
+    Color = clWindow
+    Columns = <>
+    DataSource = dsItens
+    TabOrder = 1
+  end
+  object dsItens: TDataSource
+    DataSet = cdsItens
+    Left = 272
+    Top = 8
+  end
+  object cdsItens: TMemDataset
+    FieldDefs = <>
+    Left = 324
+    Top = 8
+  end
+end

@@ -37,13 +37,12 @@ procedure TViewPesquisaProdutos.FormCreate(Sender: TObject);
 var
   LProduto: TProduto;
 begin
-  // GARANTE que o dataset esteja fechado antes de mudar a estrutura
   if cdsControl.Active then
     cdsControl.Close;
 
   cdsControl.FieldDefs.Clear;
-  cdsControl.FieldDefs.Add('CodigoBarras', ftString, 20);
-  cdsControl.FieldDefs.Add('Descricao', ftString, 100);
+  cdsControl.FieldDefs.Add('CodigoBarras', ftString, 14);
+  cdsControl.FieldDefs.Add('Descricao', ftString, 50);
   cdsControl.FieldDefs.Add('Preco', ftCurrency);
 
   cdsControl.Open;

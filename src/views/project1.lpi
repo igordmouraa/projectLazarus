@@ -107,6 +107,20 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="Pedido.Repositorio"/>
       </Unit>
+      <Unit>
+        <Filename Value="view.pesquisa_pedidos.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ViewPesquisaPedidos"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="view.detalhe_pedido.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ViewDetalhePedido"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
     </Units>
   </ProjectOptions>
   <CompilerOptions>

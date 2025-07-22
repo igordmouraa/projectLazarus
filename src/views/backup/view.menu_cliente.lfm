@@ -46,6 +46,7 @@ object ViewCliente: TViewCliente
     Top = 176
     Width = 104
     Caption = 'Salvar'
+    Default = True
     TabOrder = 3
     OnClick = btnSalvarClick
   end

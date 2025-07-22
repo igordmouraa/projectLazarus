@@ -3,9 +3,10 @@ object ViewProduto: TViewProduto
   Height = 282
   Top = 32
   Width = 516
-  Caption = 'ViewProduto'
+  Caption = 'Menu Produto'
   ClientHeight = 282
   ClientWidth = 516
+  LCLVersion = '4.0.0.4'
   OnCreate = FormCreate
   object lblDesc: TLabel
     Left = 24

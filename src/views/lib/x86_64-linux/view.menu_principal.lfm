@@ -3,7 +3,7 @@ object ViewPrincipal: TViewPrincipal
   Height = 383
   Top = 183
   Width = 549
-  Caption = 'Form1'
+  Caption = 'Página Inicial'
   ClientHeight = 383
   ClientWidth = 549
   OnShow = FormShow
@@ -19,12 +19,13 @@ object ViewPrincipal: TViewPrincipal
     TabOrder = 0
   end
   object pnlMenu: TPanel
-    Left = -8
-    Height = 388
-    Top = -8
-    Width = 214
-    ClientHeight = 388
-    ClientWidth = 214
+    Left = 0
+    Height = 383
+    Top = 0
+    Width = 206
+    Align = alLeft
+    ClientHeight = 383
+    ClientWidth = 206
     TabOrder = 1
     object btnMenuCliente: TButton
       Left = 24

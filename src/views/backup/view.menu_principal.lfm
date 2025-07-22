@@ -13,17 +13,19 @@ object ViewPrincipal: TViewPrincipal
     Top = 8
     Width = 328
     Lines.Strings = (
-      'mmoLog'
+      '--- LOG DE CLIENTES ---'
     )
+    ReadOnly = True
     TabOrder = 0
   end
   object pnlMenu: TPanel
-    Left = -8
-    Height = 388
-    Top = -8
-    Width = 214
-    ClientHeight = 388
-    ClientWidth = 214
+    Left = 0
+    Height = 383
+    Top = 0
+    Width = 206
+    Align = alLeft
+    ClientHeight = 383
+    ClientWidth = 206
     TabOrder = 1
     object btnMenuCliente: TButton
       Left = 24
@@ -52,13 +54,6 @@ object ViewPrincipal: TViewPrincipal
       TabOrder = 2
       OnClick = btnMenuPedidoClick
     end
-    object Notebook1: TNotebook
-      Left = 24
-      Height = 103
-      Top = 16
-      Width = 162
-      TabOrder = 3
-    end
   end
   object mmoLogP: TMemo
     Left = 216
@@ -66,7 +61,7 @@ object ViewPrincipal: TViewPrincipal
     Top = 136
     Width = 328
     Lines.Strings = (
-      'mmoLog'
+      '--- LOG DE PRODUTOS ---'
     )
     TabOrder = 2
   end
@@ -76,8 +71,9 @@ object ViewPrincipal: TViewPrincipal
     Top = 264
     Width = 328
     Lines.Strings = (
-      'mmoLog'
+      '--- LOG DE PEDIDOS ---'
     )
+    ReadOnly = True
     TabOrder = 3
   end
 end

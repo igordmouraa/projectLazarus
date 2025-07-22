@@ -1,0 +1,41 @@
+object ViewPesquisaPedidos: TViewPesquisaPedidos
+  Left = 266
+  Height = 370
+  Top = 32
+  Width = 548
+  Caption = 'Pedidos'
+  ClientHeight = 370
+  ClientWidth = 548
+  OnCreate = FormCreate
+  object pnlPesquisa: TPanel
+    Left = 0
+    Height = 73
+    Top = 297
+    Width = 548
+    Align = alBottom
+    TabOrder = 0
+  end
+  object grdPesquisar: TDBGrid
+    Left = 0
+    Height = 297
+    Top = 0
+    Width = 548
+    Align = alClient
+    Color = clWindow
+    Columns = <>
+    DataSource = dsControl
+    ReadOnly = True
+    TabOrder = 1
+    OnDblClick = grdPesquisarDblClick
+  end
+  object dsControl: TDataSource
+    DataSet = cdsControl
+    Left = 24
+    Top = 320
+  end
+  object cdsControl: TMemDataset
+    FieldDefs = <>
+    Left = 72
+    Top = 320
+  end
+end

@@ -7,8 +7,7 @@ interface
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls,
   DBGrids, Grids, DB, MemDS, ExtCtrls, ComCtrls, DateTimePicker,
-  uModels, Cliente.Repositorio, Produto.Repositorio, view.pesquisa_clientes,
-  view.pesquisa_produtos, Pedido.Repositorio;
+  uModels, view.pesquisa_clientes, view.pesquisa_produtos, view.pesquisa_pedidos, Cliente.Repositorio, Produto.Repositorio, Pedido.Repositorio;
 
 type
   { TViewPedido }
@@ -17,6 +16,8 @@ type
     btnCancelar: TButton;
     btnPesquisarCliente: TButton;
     btnSalvar: TButton;
+    btnPesquisarPedidos: TButton;
+    Button1: TButton;
     cdsItens: TMemDataSet;
     dsItens: TDataSource;
     dtpDataPedido: TDateTimePicker;
@@ -29,6 +30,7 @@ type
     pnlBottom: TPanel;
     pnlTop: TPanel;
     procedure btnCancelarClick(Sender: TObject);
+    procedure btnPesquisarPedidosClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure btnPesquisarClienteClick(Sender: TObject);
     procedure btnAdicionarItemClick(Sender: TObject);
@@ -68,6 +70,17 @@ end;
 procedure TViewPedido.btnCancelarClick(Sender: TObject);
 begin
    ModalResult := mrCancel;
+end;
+
+procedure TViewPedido.btnPesquisarPedidosClick(Sender: TObject);
+var LPesq: TViewPesquisaPedidos;
+begin
+  LPesq := TViewPesquisaPedidos.Create(Self);
+  try
+    LPesq.ShowModal;
+  finally
+    LPesq.Free;
+  end;
 end;
 
 procedure TViewPedido.btnPesquisarClienteClick(Sender: TObject);
