@@ -29,21 +29,13 @@ object ViewProduto: TViewProduto
     TabOrder = 0
     Text = 'Digite a descrição'
   end
-  object edtCodBar: TEdit
-    Left = 129
-    Height = 35
-    Top = 88
-    Width = 194
-    TabOrder = 1
-    Text = 'Digite o código'
-  end
   object btnPesquisarProdutos: TButton
     Left = 24
     Height = 36
     Top = 232
     Width = 162
     Caption = 'Pesquisar Produtos'
-    TabOrder = 2
+    TabOrder = 3
     OnClick = btnPesquisarProdutosClick
   end
   object btnSalvar: TButton
@@ -52,7 +44,7 @@ object ViewProduto: TViewProduto
     Top = 232
     Width = 104
     Caption = 'Salvar'
-    TabOrder = 3
+    TabOrder = 4
     OnClick = btnSalvarClick
   end
   object btnCancelar: TButton
@@ -61,7 +53,7 @@ object ViewProduto: TViewProduto
     Top = 232
     Width = 104
     Caption = 'Cancelar'
-    TabOrder = 4
+    TabOrder = 5
     OnClick = btnCancelarClick
   end
   object lblPrc: TLabel
@@ -71,12 +63,24 @@ object ViewProduto: TViewProduto
     Width = 90
     Caption = 'Preço Vendas'
   end
-  object edtPrc: TEdit
+  object edtPrc: TMaskEdit
     Left = 128
     Height = 35
     Top = 144
     Width = 194
-    TabOrder = 5
-    Text = 'Digite o valor'
+    EnableSets = False
+    MaxLength = 0
+    TabOrder = 2
+    Text = 'Digite o Valor...'
+    TextHint = 'Digite o Valor...'
+    SpaceChar = '_'
+  end
+  object edtCodBar: TEdit
+    Left = 128
+    Height = 35
+    Top = 88
+    Width = 194
+    TabOrder = 1
+    Text = 'Digite o código'
   end
 end

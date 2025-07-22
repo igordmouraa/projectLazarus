@@ -6,7 +6,6 @@ object ViewCliente: TViewCliente
   Caption = 'ViewCliente'
   ClientHeight = 218
   ClientWidth = 509
-  OnCloseQuery = FormCloseQuery
   OnCreate = FormCreate
   object lblNome: TLabel
     Left = 24
@@ -27,16 +26,10 @@ object ViewCliente: TViewCliente
     Height = 35
     Top = 32
     Width = 194
+    ParentShowHint = False
     TabOrder = 0
-    Text = 'Digite seu nome...'
-  end
-  object edtCPF: TEdit
-    Left = 88
-    Height = 35
-    Top = 88
-    Width = 194
-    TabOrder = 1
-    Text = 'Digite seu CPF...'
+    Text = 'Digite o nome...'
+    TextHint = 'Digite o nome...'
   end
   object btn_pesquisa_cliente: TButton
     Left = 24
@@ -64,5 +57,18 @@ object ViewCliente: TViewCliente
     Caption = 'Cancelar'
     TabOrder = 4
     OnClick = btnCancelarClick
+  end
+  object edtCPF: TMaskEdit
+    Left = 87
+    Height = 35
+    Top = 88
+    Width = 194
+    EnableSets = False
+    MaxLength = 14
+    TabOrder = 1
+    EditMask = '000.000.000-00;1;_'
+    Text = '   .   .   -  '
+    TextHint = 'Digite o CPF...'
+    SpaceChar = '_'
   end
 end

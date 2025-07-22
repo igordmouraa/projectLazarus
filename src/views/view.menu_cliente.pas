@@ -4,7 +4,7 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, ExtCtrls,
-  uModels, Cliente.Repositorio, view.pesquisa_clientes, Types;
+  MaskEdit, uModels, Cliente.Repositorio, view.pesquisa_clientes, Types;
 
 type
   TClienteOp = (cpIncluir, cpAlterar);
@@ -12,15 +12,15 @@ type
   { TViewCliente }
 
   TViewCliente = class(TForm)
+    btn_pesquisa_cliente: TButton;
     edtNome: TEdit;
-    edtCPF: TEdit;
     lblNome: TLabel;
     lblCPF: TLabel;
     btnSalvar: TButton;
     btnCancelar: TButton;
     btnPesquisarClientes: TButton;
+    edtCPF: TMaskEdit;
 
-    procedure FormCloseQuery(Sender: TObject; var CanClose: boolean);
     procedure FormCreate(Sender: TObject);
     procedure btnCancelarClick(Sender: TObject);
     procedure btnPesquisarClientesClick(Sender: TObject);
@@ -67,6 +67,8 @@ begin
   FClienteModel := AValue;
   edtNome.Text := FClienteModel.Nome;
   edtCPF.Text := FClienteModel.CPF;
+  edtCPF.ReadOnly := True;
+  Self.Caption := 'Editando Cliente';
 end;
 
 function TViewCliente.GetModel: TCliente;
@@ -77,13 +79,10 @@ end;
 procedure TViewCliente.FormCreate(Sender: TObject);
 begin
   FOperacao := cpIncluir;
+  edtCPF.ReadOnly := False;
+  Self.Caption := 'Novo Cliente';
 end;
 
-procedure TViewCliente.FormCloseQuery(Sender: TObject; var CanClose: boolean);
-begin
-  FClienteModel.Nome := edtNome.Text;
-  FClienteModel.CPF := edtCPF.Text;
-end;
 
 procedure TViewCliente.btnCancelarClick(Sender: TObject);
 begin

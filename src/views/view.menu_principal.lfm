@@ -13,8 +13,9 @@ object ViewPrincipal: TViewPrincipal
     Top = 8
     Width = 328
     Lines.Strings = (
-      'mmoLog'
+      '--- LOG DE CLIENTES ---'
     )
+    ReadOnly = True
     TabOrder = 0
   end
   object pnlMenu: TPanel
@@ -59,7 +60,7 @@ object ViewPrincipal: TViewPrincipal
     Top = 136
     Width = 328
     Lines.Strings = (
-      'mmoLog'
+      '--- LOG DE PRODUTOS ---'
     )
     TabOrder = 2
   end
@@ -69,8 +70,9 @@ object ViewPrincipal: TViewPrincipal
     Top = 264
     Width = 328
     Lines.Strings = (
-      'mmoLog'
+      '--- LOG DE PEDIDOS ---'
     )
+    ReadOnly = True
     TabOrder = 3
   end
 end

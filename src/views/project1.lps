@@ -10,7 +10,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="16"/>
         <CursorPos X="21" Y="26"/>
-        <UsageCount Value="37"/>
+        <UsageCount Value="39"/>
       </Unit>
       <Unit>
         <Filename Value="view.menu_principal.pas"/>
@@ -18,11 +18,11 @@
         <ComponentName Value="ViewPrincipal"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="6"/>
+        <EditorIndex Value="7"/>
         <TopLine Value="35"/>
         <CursorPos Y="55"/>
         <FoldState Value=" T3e0C1 PCE0!"/>
-        <UsageCount Value="37"/>
+        <UsageCount Value="39"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -33,10 +33,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="47"/>
-        <CursorPos X="19" Y="98"/>
-        <FoldState Value=" T3i607611 Pi3iH0_"/>
-        <UsageCount Value="37"/>
+        <TopLine Value="44"/>
+        <CursorPos X="17" Y="85"/>
+        <FoldState Value=" T3i60711113 Pi5iG0\"/>
+        <UsageCount Value="39"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -47,7 +47,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="17"/>
         <CursorPos X="30" Y="23"/>
-        <UsageCount Value="37"/>
+        <UsageCount Value="39"/>
       </Unit>
       <Unit>
         <Filename Value="../repo/cliente.repositorio.pas"/>
@@ -55,7 +55,7 @@
         <UnitName Value="Cliente.Repositorio"/>
         <EditorIndex Value="-1"/>
         <CursorPos Y="9"/>
-        <UsageCount Value="37"/>
+        <UsageCount Value="39"/>
       </Unit>
       <Unit>
         <Filename Value="view.pesquisa_clientes.pas"/>
@@ -63,10 +63,10 @@
         <ComponentName Value="ViewPesquisaClientes"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="3"/>
+        <EditorIndex Value="4"/>
         <TopLine Value="50"/>
         <CursorPos X="53" Y="46"/>
-        <UsageCount Value="37"/>
+        <UsageCount Value="39"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -82,7 +82,7 @@
         <Filename Value="view.menu_cliente.lfm"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="19"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
         <DefaultSyntaxHighlighter Value="LFM"/>
       </Unit>
       <Unit>
@@ -90,7 +90,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="4000"/>
         <CursorPos Y="4010"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit>
       <Unit>
         <Filename Value="view.menu_produto.pas"/>
@@ -99,9 +99,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="2"/>
-        <TopLine Value="9"/>
-        <CursorPos X="34" Y="9"/>
-        <UsageCount Value="24"/>
+        <TopLine Value="66"/>
+        <CursorPos X="3" Y="81"/>
+        <FoldState Value=" T7EHN T3iO0501113 Pi0iA0H"/>
+        <UsageCount Value="25"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -111,7 +112,7 @@
         <UnitName Value="Produto.Repositorio"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="22" Y="4"/>
-        <UsageCount Value="23"/>
+        <UsageCount Value="24"/>
       </Unit>
       <Unit>
         <Filename Value="view.pesquisa_produtos.pas"/>
@@ -119,11 +120,10 @@
         <ComponentName Value="ViewPesquisaProdutos"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="4"/>
+        <EditorIndex Value="5"/>
         <TopLine Value="63"/>
         <CursorPos X="28" Y="79"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -133,8 +133,10 @@
         <ComponentName Value="ViewPedido"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
+        <TopLine Value="73"/>
         <CursorPos X="45" Y="11"/>
-        <UsageCount Value="22"/>
+        <FoldState Value=" T3iO033 PiQiM0O"/>
+        <UsageCount Value="23"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -142,66 +144,31 @@
         <Filename Value="../repo/pedido.repositorio.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="Pedido.Repositorio"/>
-        <EditorIndex Value="5"/>
-        <TopLine Value="4"/>
-        <CursorPos X="31" Y="8"/>
-        <UsageCount Value="21"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="33"/>
+        <CursorPos X="21" Y="44"/>
+        <UsageCount Value="22"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/share/lazarus/4.0.0/lcl/include/customform.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="376"/>
+        <CursorPos Y="387"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/share/lazarus/4.0.0/lcl/maskedit.pp"/>
+        <UnitName Value="MaskEdit"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="2462"/>
+        <CursorPos Y="2472"/>
+        <UsageCount Value="10"/>
         <Loaded Value="True"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="28">
-      <Position>
-        <Filename Value="../repo/pedido.repositorio.pas"/>
-        <Caret Line="38" Column="5" TopLine="17"/>
-      </Position>
-      <Position>
-        <Filename Value="view.menu_pedido.pas"/>
-        <Caret Line="3" Column="22"/>
-      </Position>
-      <Position>
-        <Filename Value="view.menu_pedido.pas"/>
-        <Caret Line="29" Column="11" TopLine="27"/>
-      </Position>
-      <Position>
-        <Filename Value="view.menu_pedido.pas"/>
-        <Caret Line="30" Column="11" TopLine="28"/>
-      </Position>
-      <Position>
-        <Filename Value="view.menu_pedido.pas"/>
-        <Caret Line="31" Column="11" TopLine="29"/>
-      </Position>
-      <Position>
-        <Filename Value="view.menu_pedido.pas"/>
-        <Caret Line="30" Column="11" TopLine="8"/>
-      </Position>
-      <Position>
-        <Filename Value="view.menu_pedido.pas"/>
-        <Caret Line="32" Column="11" TopLine="8"/>
-      </Position>
-      <Position>
-        <Filename Value="view.menu_pedido.pas"/>
-        <Caret Line="33" Column="11" TopLine="8"/>
-      </Position>
-      <Position>
-        <Filename Value="view.menu_pedido.pas"/>
-        <Caret Line="34" Column="11" TopLine="8"/>
-      </Position>
-      <Position>
-        <Filename Value="view.menu_pedido.pas"/>
-        <Caret Line="35" Column="11" TopLine="8"/>
-      </Position>
-      <Position>
-        <Filename Value="view.menu_pedido.pas"/>
-        <Caret Line="34" Column="11" TopLine="8"/>
-      </Position>
-      <Position>
-        <Filename Value="view.menu_pedido.pas"/>
-        <Caret Line="35" Column="11" TopLine="8"/>
-      </Position>
-      <Position>
-        <Filename Value="view.menu_pedido.pas"/>
-        <Caret Line="36" Column="11" TopLine="8"/>
-      </Position>
+    <JumpHistory HistoryIndex="29">
       <Position>
         <Filename Value="view.menu_pedido.pas"/>
         <Caret Line="37" Column="11" TopLine="8"/>
@@ -265,6 +232,62 @@
       <Position>
         <Filename Value="view.pesquisa_produtos.pas"/>
         <Caret Line="69" Column="51" TopLine="63"/>
+      </Position>
+      <Position>
+        <Filename Value="view.menu_cliente.pas"/>
+        <Caret Line="22" Column="24" TopLine="17"/>
+      </Position>
+      <Position>
+        <Filename Value="view.menu_cliente.pas"/>
+        <Caret Line="135" Column="5" TopLine="88"/>
+      </Position>
+      <Position>
+        <Filename Value="view.menu_cliente.pas"/>
+        <Caret TopLine="86"/>
+      </Position>
+      <Position>
+        <Filename Value="view.menu_produto.pas"/>
+        <Caret Line="20" Column="56" TopLine="9"/>
+      </Position>
+      <Position>
+        <Filename Value="view.menu_produto.pas"/>
+        <Caret Line="21" Column="56" TopLine="9"/>
+      </Position>
+      <Position>
+        <Filename Value="view.menu_produto.pas"/>
+        <Caret Line="20" Column="56" TopLine="9"/>
+      </Position>
+      <Position>
+        <Filename Value="view.menu_produto.pas"/>
+        <Caret Line="21" Column="56" TopLine="9"/>
+      </Position>
+      <Position>
+        <Filename Value="view.menu_produto.pas"/>
+        <Caret Line="20" Column="60" TopLine="9"/>
+      </Position>
+      <Position>
+        <Filename Value="view.menu_produto.pas"/>
+        <Caret Line="49" TopLine="6"/>
+      </Position>
+      <Position>
+        <Filename Value="view.menu_principal.pas"/>
+        <Caret Line="55" TopLine="35"/>
+      </Position>
+      <Position>
+        <Filename Value="view.menu_principal.pas"/>
+        <Caret Line="56" TopLine="36"/>
+      </Position>
+      <Position>
+        <Filename Value="view.menu_principal.pas"/>
+        <Caret Line="55" TopLine="35"/>
+      </Position>
+      <Position>
+        <Filename Value="view.menu_produto.pas"/>
+        <Caret Line="80" Column="30" TopLine="68"/>
+      </Position>
+      <Position>
+        <Filename Value="view.menu_produto.pas"/>
+        <Caret Line="81" Column="3" TopLine="66"/>
       </Position>
     </JumpHistory>
     <RunParams>

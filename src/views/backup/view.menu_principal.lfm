@@ -50,6 +50,14 @@ object ViewPrincipal: TViewPrincipal
       Width = 165
       Caption = 'Pedido'
       TabOrder = 2
+      OnClick = btnMenuPedidoClick
+    end
+    object Notebook1: TNotebook
+      Left = 24
+      Height = 103
+      Top = 16
+      Width = 162
+      TabOrder = 3
     end
   end
   object mmoLogP: TMemo

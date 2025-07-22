@@ -5,8 +5,8 @@ unit view.menu_produto;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls,
-  uModels, Produto.Repositorio; // Unidades necessárias
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, MaskEdit,
+  uModels, view.pesquisa_produtos,Produto.Repositorio;
 
 type
   TProdutoOp = (opIncluir, opAlterar);
@@ -16,13 +16,13 @@ type
     btnCancelar: TButton;
     btnSalvar: TButton;
     btnPesquisarProdutos: TButton;
+    edtPrc: TMaskEdit;
     edtCodBar: TEdit;
-    edtPrc: TEdit;
     edtDesc: TEdit;
     lblCodBar: TLabel;
     lblPrc: TLabel;
     lblDesc: TLabel;
-    // --- Declaração dos Eventos ---
+
     procedure FormCreate(Sender: TObject);
     procedure btnSalvarClick(Sender: TObject);
     procedure btnCancelarClick(Sender: TObject);
@@ -51,13 +51,12 @@ begin
   if Trim(edtDesc.Text) = '' then
     raise Exception.Create('O campo Descrição é obrigatório!');
 
-  if Trim(edtCodBar.Text) = '' then
+  if Trim(edtPrc.Text) = '' then
     raise Exception.Create('O campo Código de Barras é obrigatório!');
 
   if Trim(edtPrc.Text) = '' then
     raise Exception.Create('O campo Preço é obrigatório!');
 
-  // Valida se o preço é um número válido
   try
     StrToFloat(edtPrc.Text);
   except
@@ -69,7 +68,7 @@ end;
 procedure TViewProduto.PreencheModel;
 begin
   FProdutoModel.Descricao := edtDesc.Text;
-  FProdutoModel.CodigoBarras := edtCodBar.Text;
+  FProdutoModel.CodigoBarras := edtPrc.Text;
   FProdutoModel.Preco := StrToFloat(edtPrc.Text);
 end;
 
@@ -77,8 +76,10 @@ procedure TViewProduto.SetModel(AValue: TProduto);
 begin
   FProdutoModel := AValue;
   edtDesc.Text := FProdutoModel.Descricao;
-  edtCodBar.Text := FProdutoModel.CodigoBarras;
+  edtCodBar.ReadOnly := True              ;
+  edtPrc.Text := FProdutoModel.CodigoBarras;
   edtPrc.Text := FloatToStr(FProdutoModel.Preco);
+  Self.Caption := 'Editando Produto';
 end;
 
 function TViewProduto.GetModel: TProduto;
@@ -89,6 +90,8 @@ end;
 procedure TViewProduto.FormCreate(Sender: TObject);
 begin
   FOperacao := opIncluir;
+  edtCodBar.ReadOnly := False;
+  Self.Caption := 'Novo Produto';
 end;
 
 procedure TViewProduto.btnCancelarClick(Sender: TObject);
@@ -122,7 +125,7 @@ begin
 
     if FOperacao = opIncluir then
     begin
-      if (TProdutoRepositorio.ExisteProdutoCadastrado(edtCodBar.Text) >= 0) then
+      if (TProdutoRepositorio.ExisteProdutoCadastrado(edtPrc.Text) >= 0) then
         raise Exception.Create('Já existe um produto com este Código de Barras!');
     end;
 

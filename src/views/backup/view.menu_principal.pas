@@ -18,6 +18,7 @@ type
     mmoLog: TMemo;
     mmoLogP: TMemo;
     mmoLogPD: TMemo;
+    Notebook1: TNotebook;
     pnlMenu: TPanel;
     procedure btnMenuClienteClick(Sender: TObject);
     procedure btnMenuProdutoClick(Sender: TObject);
