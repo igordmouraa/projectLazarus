@@ -76,6 +76,17 @@
         <ComponentName Value="ViewProduto"/>
         <ResourceBaseClass Value="Form"/>
       </Unit>
+      <Unit>
+        <Filename Value="../repo/produto.repositorio.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Produto.Repositorio"/>
+      </Unit>
+      <Unit>
+        <Filename Value="view.pesquisa_produtos.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ViewPesquisaProdutos"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
     </Units>
   </ProjectOptions>
   <CompilerOptions>

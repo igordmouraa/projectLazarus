@@ -12,7 +12,7 @@ type
     TProduto = record
       Descricao: String;
       CodigoBarras: String;
-      PrecoVenda: Double;
+      Preco: Double;
     end;
 
 implementation

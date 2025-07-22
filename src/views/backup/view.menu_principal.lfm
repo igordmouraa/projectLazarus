@@ -1,45 +1,65 @@
 object ViewPrincipal: TViewPrincipal
   Left = 408
-  Height = 295
+  Height = 383
   Top = 183
   Width = 549
   Caption = 'Form1'
-  ClientHeight = 295
+  ClientHeight = 383
   ClientWidth = 549
   OnShow = FormShow
-  object btn_menu_cliente: TButton
-    Left = 16
-    Height = 58
-    Top = 24
-    Width = 165
-    Caption = 'Cliente'
-    TabOrder = 0
-    OnClick = btn_menu_clienteClick
-  end
-  object btn_menu_produto: TButton
-    Left = 190
-    Height = 58
-    Top = 24
-    Width = 165
-    Caption = 'Produto'
-    TabOrder = 1
-  end
-  object btn_menu_pedido: TButton
-    Left = 366
-    Height = 58
-    Top = 24
-    Width = 165
-    Caption = 'Pedido'
-    TabOrder = 2
-  end
   object mmoLog: TMemo
-    Left = 0
-    Height = 137
-    Top = 160
-    Width = 549
+    Left = 216
+    Height = 112
+    Top = 8
+    Width = 328
     Lines.Strings = (
       'mmoLog'
     )
-    TabOrder = 3
+    TabOrder = 0
+  end
+  object pnlMenu: TPanel
+    Left = -8
+    Height = 388
+    Top = -8
+    Width = 214
+    ClientHeight = 388
+    ClientWidth = 214
+    TabOrder = 1
+    object btnMenuCliente: TButton
+      Left = 24
+      Height = 58
+      Top = 128
+      Width = 165
+      Caption = 'Cliente'
+      TabOrder = 0
+      OnClick = btnMenuClienteClick
+    end
+    object btnMenuProduto: TButton
+      Left = 24
+      Height = 58
+      Top = 216
+      Width = 165
+      Caption = 'Produto'
+      TabOrder = 1
+      OnClick = btnMenuProdutoClick
+    end
+    object btnMenuPedido: TButton
+      Left = 24
+      Height = 58
+      Top = 304
+      Width = 165
+      Caption = 'Pedido'
+      TabOrder = 2
+    end
+  end
+  object mmoLogP: TMemo
+    Left = 216
+    Height = 112
+    Top = 136
+    Width = 328
+    Lines.Strings = (
+      'mmoLog'
+    )
+    TabOrder = 2
   end
 end

@@ -8,10 +8,10 @@ object ViewPrincipal: TViewPrincipal
   ClientWidth = 549
   OnShow = FormShow
   object mmoLog: TMemo
-    Left = 224
-    Height = 137
+    Left = 216
+    Height = 112
     Top = 8
-    Width = 317
+    Width = 328
     Lines.Strings = (
       'mmoLog'
     )
@@ -25,30 +25,41 @@ object ViewPrincipal: TViewPrincipal
     ClientHeight = 388
     ClientWidth = 214
     TabOrder = 1
-    object btn_menu_cliente: TButton
+    object btnMenuCliente: TButton
       Left = 24
       Height = 58
-      Top = 104
+      Top = 128
       Width = 165
       Caption = 'Cliente'
       TabOrder = 0
-      OnClick = btn_menu_clienteClick
+      OnClick = btnMenuClienteClick
     end
-    object btn_menu_produto: TButton
+    object btnMenuProduto: TButton
       Left = 24
       Height = 58
-      Top = 192
+      Top = 216
       Width = 165
       Caption = 'Produto'
       TabOrder = 1
+      OnClick = btnMenuProdutoClick
     end
-    object btn_menu_pedido: TButton
+    object btnMenuPedido: TButton
       Left = 24
       Height = 58
-      Top = 296
+      Top = 304
       Width = 165
       Caption = 'Pedido'
       TabOrder = 2
     end
+  end
+  object mmoLogP: TMemo
+    Left = 216
+    Height = 112
+    Top = 136
+    Width = 328
+    Lines.Strings = (
+      'mmoLog'
+    )
+    TabOrder = 2
   end
 end

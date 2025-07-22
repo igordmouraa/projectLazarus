@@ -8,9 +8,8 @@
         <Filename Value="project1.lpr"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="12"/>
-        <CursorPos X="19" Y="13"/>
-        <UsageCount Value="34"/>
+        <CursorPos X="21" Y="4"/>
+        <UsageCount Value="36"/>
       </Unit>
       <Unit>
         <Filename Value="view.menu_principal.pas"/>
@@ -18,11 +17,9 @@
         <ComponentName Value="ViewPrincipal"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="1"/>
-        <TopLine Value="35"/>
-        <CursorPos Y="50"/>
-        <UsageCount Value="34"/>
+        <EditorIndex Value="2"/>
+        <CursorPos X="38" Y="52"/>
+        <UsageCount Value="36"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -32,11 +29,10 @@
         <ComponentName Value="ViewCliente"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="2"/>
-        <TopLine Value="42"/>
-        <CursorPos X="53" Y="47"/>
-        <FoldState Value=" T3i6078 PiHiH0%"/>
-        <UsageCount Value="34"/>
+        <EditorIndex Value="4"/>
+        <CursorPos X="19" Y="98"/>
+        <FoldState Value=" T3i607611 Pi3iH0_"/>
+        <UsageCount Value="36"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -45,17 +41,17 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="uModels"/>
         <EditorIndex Value="-1"/>
-        <CursorPos X="28" Y="6"/>
-        <UsageCount Value="34"/>
+        <CursorPos X="12" Y="15"/>
+        <UsageCount Value="36"/>
       </Unit>
       <Unit>
         <Filename Value="../repo/cliente.repositorio.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="Cliente.Repositorio"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="78"/>
-        <CursorPos X="25" Y="64"/>
-        <UsageCount Value="34"/>
+        <TopLine Value="80"/>
+        <CursorPos X="42" Y="89"/>
+        <UsageCount Value="36"/>
       </Unit>
       <Unit>
         <Filename Value="view.pesquisa_clientes.pas"/>
@@ -63,17 +59,19 @@
         <ComponentName Value="ViewPesquisaClientes"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="13"/>
-        <CursorPos X="33" Y="20"/>
-        <UsageCount Value="34"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="29"/>
+        <CursorPos X="53" Y="46"/>
+        <UsageCount Value="36"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="view.menu_principal.lfm"/>
         <HasResources Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="47" Y="7"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="10"/>
         <DefaultSyntaxHighlighter Value="LFM"/>
       </Unit>
       <Unit>
@@ -95,70 +93,123 @@
         <IsPartOfProject Value="True"/>
         <ComponentName Value="ViewProduto"/>
         <ResourceBaseClass Value="Form"/>
+        <TopLine Value="13"/>
+        <CursorPos X="34" Y="9"/>
+        <UsageCount Value="23"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../repo/produto.repositorio.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Produto.Repositorio"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="56"/>
+        <CursorPos X="35" Y="89"/>
+        <UsageCount Value="22"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="view.pesquisa_produtos.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ViewPesquisaProdutos"/>
+        <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="62"/>
+        <CursorPos Y="52"/>
         <UsageCount Value="21"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="14">
+    <JumpHistory HistoryIndex="21">
       <Position>
-        <Filename Value="view.menu_cliente.pas"/>
-        <Caret Line="102" Column="32" TopLine="91"/>
+        <Filename Value="view.menu_produto.pas"/>
+        <Caret Line="6" Column="17" TopLine="18"/>
       </Position>
       <Position>
-        <Filename Value="view.menu_cliente.pas"/>
-        <Caret Line="128" Column="27" TopLine="120"/>
+        <Filename Value="../repo/produto.repositorio.pas"/>
+        <Caret Column="25"/>
       </Position>
       <Position>
-        <Filename Value="view.menu_cliente.pas"/>
-        <Caret Line="128" Column="27" TopLine="102"/>
+        <Filename Value="../repo/produto.repositorio.pas"/>
+        <Caret Line="8" Column="29"/>
       </Position>
       <Position>
-        <Filename Value="view.menu_cliente.pas"/>
-        <Caret Line="131" Column="27" TopLine="117"/>
+        <Filename Value="../repo/produto.repositorio.pas"/>
+        <Caret Line="83" Column="27" TopLine="75"/>
       </Position>
       <Position>
-        <Filename Value="view.menu_cliente.pas"/>
-        <Caret Line="128" Column="27" TopLine="114"/>
-      </Position>
-      <Position>
-        <Filename Value="view.menu_cliente.pas"/>
-        <Caret Line="130" Column="27" TopLine="116"/>
-      </Position>
-      <Position>
-        <Filename Value="view.menu_cliente.pas"/>
-        <Caret Line="129" Column="27" TopLine="115"/>
+        <Filename Value="../repo/produto.repositorio.pas"/>
+        <Caret Line="92" Column="41" TopLine="87"/>
       </Position>
       <Position>
         <Filename Value="view.menu_produto.pas"/>
+        <Caret Line="4" Column="20"/>
       </Position>
       <Position>
-        <Filename Value="view.menu_principal.pas"/>
-        <Caret Line="49" TopLine="34"/>
+        <Filename Value="view.menu_produto.pas"/>
+        <Caret Line="7" Column="35"/>
       </Position>
       <Position>
-        <Filename Value="view.menu_principal.pas"/>
-        <Caret Line="50" TopLine="35"/>
+        <Filename Value="view.menu_cliente.pas"/>
+        <Caret Line="49" Column="33" TopLine="42"/>
       </Position>
       <Position>
-        <Filename Value="view.menu_principal.pas"/>
-        <Caret Line="49" TopLine="34"/>
+        <Filename Value="view.menu_produto.pas"/>
+        <Caret Line="25" Column="26" TopLine="19"/>
       </Position>
       <Position>
-        <Filename Value="view.menu_principal.pas"/>
-        <Caret Line="50" TopLine="35"/>
+        <Filename Value="view.pesquisa_produtos.pas"/>
       </Position>
       <Position>
-        <Filename Value="view.menu_principal.pas"/>
-        <Caret Line="49" TopLine="34"/>
+        <Filename Value="view.pesquisa_produtos.pas"/>
+        <Caret Line="21" Column="29" TopLine="13"/>
       </Position>
       <Position>
-        <Filename Value="view.menu_principal.pas"/>
-        <Caret Line="50" TopLine="35"/>
+        <Filename Value="view.pesquisa_clientes.pas"/>
+        <Caret Line="9" Column="40"/>
       </Position>
       <Position>
-        <Filename Value="view.menu_principal.pas"/>
-        <Caret Line="49" TopLine="34"/>
+        <Filename Value="view.pesquisa_produtos.pas"/>
+        <Caret Line="13" Column="47"/>
+      </Position>
+      <Position>
+        <Filename Value="view.menu_produto.pas"/>
+        <Caret Line="109" Column="40" TopLine="102"/>
+      </Position>
+      <Position>
+        <Filename Value="view.menu_produto.pas"/>
+        <Caret Line="59" TopLine="61"/>
+      </Position>
+      <Position>
+        <Filename Value="view.menu_produto.pas"/>
+        <Caret Line="9" Column="34"/>
+      </Position>
+      <Position>
+        <Filename Value="view.pesquisa_produtos.pas"/>
+        <Caret Line="17" Column="24" TopLine="7"/>
+      </Position>
+      <Position>
+        <Filename Value="../repo/produto.repositorio.pas"/>
+        <Caret Line="92" Column="50" TopLine="71"/>
+      </Position>
+      <Position>
+        <Filename Value="../repo/produto.repositorio.pas"/>
+        <Caret Line="8" Column="39"/>
+      </Position>
+      <Position>
+        <Filename Value="../repo/produto.repositorio.pas"/>
+        <Caret Line="6" Column="66"/>
+      </Position>
+      <Position>
+        <Filename Value="view.pesquisa_produtos.pas"/>
+        <Caret Line="44" Column="56" TopLine="41"/>
+      </Position>
+      <Position>
+        <Filename Value="view.pesquisa_produtos.pas"/>
+        <Caret Line="54" Column="33" TopLine="41"/>
       </Position>
     </JumpHistory>
     <RunParams>

@@ -9,12 +9,18 @@ uses
   {$IFDEF HASAMIGA}
   athreads,
   {$ENDIF}
-  Interfaces, // this includes the LCL widgetset
+  Interfaces,
   Forms, memdslaz,
+  //Models
+  uModels,
+  //Views
   view.menu_principal,
   view.menu_cliente,
+  view.pesquisa_clientes,
+  view.menu_produto,
+  //Repositorios
   Cliente.Repositorio,
-  view.pesquisa_clientes, view.menu_produto;
+  Produto.Repositorio, view.pesquisa_produtos;
 
 {$R *.res}
 
@@ -26,6 +32,6 @@ begin
 
 
   Application.CreateForm(TViewPrincipal, ViewPrincipal);
-  Application.CreateForm(TViewProduto, ViewProduto);
+  Application.CreateForm(TViewPesquisaProdutos, ViewPesquisaProdutos);
   Application.Run;
 end.

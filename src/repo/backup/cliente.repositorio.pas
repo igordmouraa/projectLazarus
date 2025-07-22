@@ -61,9 +61,7 @@ implementation
   class function TClienteRepositorio.GetCliente(ACpf: String): TCliente;
   var LCliente: TCliente;
   begin
-    Result := nil;
-
-     for LCLiente in ClientesRepo do
+      for LCLiente in ClientesRepo do
      begin
        if LCliente.CPF = ACpf then
           Exit(LCliente);

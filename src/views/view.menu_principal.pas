@@ -6,19 +6,21 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, ExtCtrls,
-  view.menu_cliente, Cliente.Repositorio;
+  view.menu_cliente, view.menu_produto, Cliente.Repositorio, Produto.Repositorio;
 
 type
 
   { TViewPrincipal }
 
   TViewPrincipal = class(TForm)
-    btn_menu_cliente: TButton;
-    btn_menu_pedido: TButton;
-    btn_menu_produto: TButton;
+    btnMenuCliente: TButton;
+    btnMenuPedido: TButton;
+    btnMenuProduto: TButton;
     mmoLog: TMemo;
+    mmoLogP: TMemo;
     pnlMenu: TPanel;
-    procedure btn_menu_clienteClick(Sender: TObject);
+    procedure btnMenuClienteClick(Sender: TObject);
+    procedure btnMenuProdutoClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
   private
 
@@ -35,7 +37,7 @@ implementation
 
 { TViewPrincipal }
 
-procedure TViewPrincipal.btn_menu_clienteClick(Sender: TObject);
+procedure TViewPrincipal.btnMenuClienteClick(Sender: TObject);
 var
   LCliente: TViewCliente;
 begin
@@ -58,9 +60,33 @@ begin
 
 end;
 
+procedure TViewPrincipal.btnMenuProdutoClick(Sender: TObject);
+var
+  LProduto: TViewProduto;
+begin
+  LProduto := TViewProduto.Create(Self);
+  try
+
+    LProduto.ShowModal;
+
+
+    if LProduto.ModalResult = mrOk then
+    begin
+      //ShowMessage('3 - ModalResult foi OK! Atualizando o memo.');
+      TProdutoRepositorio.ShowProdutosLogs(mmoLogP);
+    end;
+
+
+  finally
+    LProduto.Free;
+  end;
+
+end;
+
 procedure TViewPrincipal.FormShow(Sender: TObject);
 begin
   TClienteRepositorio.StartRepo();
+  TProdutoRepositorio.StartRepo();
 end;
 
 end.

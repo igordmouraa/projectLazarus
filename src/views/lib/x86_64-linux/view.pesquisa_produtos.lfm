@@ -1,0 +1,40 @@
+object ViewPesquisaProdutos: TViewPesquisaProdutos
+  Left = 266
+  Height = 316
+  Top = 32
+  Width = 533
+  Caption = 'ViewPesquisaProdutos'
+  ClientHeight = 316
+  ClientWidth = 533
+  OnCreate = FormCreate
+  object pnlPesquisa: TPanel
+    Left = 8
+    Height = 306
+    Top = 8
+    Width = 520
+    Caption = 'pnlPesquisa'
+    ClientHeight = 306
+    ClientWidth = 520
+    TabOrder = 0
+    object grdPesquisar: TDBGrid
+      Left = 8
+      Height = 169
+      Top = 16
+      Width = 497
+      Color = clWindow
+      Columns = <>
+      DataSource = dsControl
+      TabOrder = 0
+    end
+  end
+  object dsControl: TDataSource
+    DataSet = cdsControl
+    Left = 52
+    Top = 232
+  end
+  object cdsControl: TMemDataset
+    FieldDefs = <>
+    Left = 188
+    Top = 253
+  end
+end

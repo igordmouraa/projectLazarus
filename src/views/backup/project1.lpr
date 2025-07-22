@@ -9,13 +9,17 @@ uses
   {$IFDEF HASAMIGA}
   athreads,
   {$ENDIF}
-  Interfaces, // this includes the LCL widgetset
+  Interfaces,
   Forms, memdslaz,
-  // Abaixo, as units do seu projeto:
+  //Views
   view.menu_principal,
   view.menu_cliente,
+  view.pesquisa_clientes,
+  view.menu_produto,
+  //Repositorios
   Cliente.Repositorio,
-  view.pesquisa_clientes;
+  Produto.Repositorio,
+
 
 {$R *.res}
 
@@ -27,5 +31,6 @@ begin
 
 
   Application.CreateForm(TViewPrincipal, ViewPrincipal);
+  Application.CreateForm(TViewProduto, ViewProduto);
   Application.Run;
 end.

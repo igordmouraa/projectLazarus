@@ -42,7 +42,7 @@ begin
     cdsControl.Close;
 
   cdsControl.FieldDefs.Clear;
-  cdsControl.FieldDefs.Add('Nome', ftString, 100);
+  cdsControl.FieldDefs.Add('Nome', ftString, 50);
   cdsControl.FieldDefs.Add('CPF', ftString, 14);
 
 

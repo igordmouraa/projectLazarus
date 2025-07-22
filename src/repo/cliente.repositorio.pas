@@ -86,6 +86,7 @@ implementation
   var LCliente: TCliente;
   begin
     AppLog.Lines.Clear;
+    AppLog.Lines.Add('--- LOG DE CLIENTES ---');
 
     for LCliente in ClientesRepo do
     begin

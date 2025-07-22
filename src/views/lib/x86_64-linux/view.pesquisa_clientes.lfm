@@ -37,8 +37,8 @@ object ViewPesquisaClientes: TViewPesquisaClientes
   end
   object dsControl: TDataSource
     DataSet = cdsControl
-    Left = 24
-    Top = 208
+    Left = 56
+    Top = 240
   end
   object cdsControl: TMemDataset
     FieldDefs = <>
