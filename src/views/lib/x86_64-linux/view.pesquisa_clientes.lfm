@@ -1,0 +1,48 @@
+object ViewPesquisaClientes: TViewPesquisaClientes
+  Left = 966
+  Height = 325
+  Top = 32
+  Width = 534
+  Caption = 'Form2'
+  ClientHeight = 325
+  ClientWidth = 534
+  OnCreate = FormCreate
+  object pnlPesquisa: TPanel
+    Left = 8
+    Height = 306
+    Top = 8
+    Width = 520
+    Caption = 'pnlPesquisa'
+    ClientHeight = 306
+    ClientWidth = 520
+    TabOrder = 0
+    object grdPesquisar: TDBGrid
+      Left = -136
+      Height = 169
+      Top = 16
+      Width = 657
+      Color = clWindow
+      Columns = <      
+        item
+          Title.Caption = 'Nome'
+          FieldName = 'Nome'
+        end      
+        item
+          Title.Caption = 'CPF'
+          FieldName = 'CPF'
+        end>
+      DataSource = dsControl
+      TabOrder = 0
+    end
+  end
+  object dsControl: TDataSource
+    DataSet = cdsControl
+    Left = 24
+    Top = 208
+  end
+  object cdsControl: TMemDataset
+    FieldDefs = <>
+    Left = 160
+    Top = 240
+  end
+end
