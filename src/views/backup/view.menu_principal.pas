@@ -46,7 +46,7 @@ begin
 
     if LCliente.ModalResult = mrOk then
     begin
-      ShowMessage('3 - ModalResult foi OK! Atualizando o memo.');
+      //ShowMessage('3 - ModalResult foi OK! Atualizando o memo.');
       TClienteRepositorio.ShowClientesLogs(mmoLog);
     end;
 

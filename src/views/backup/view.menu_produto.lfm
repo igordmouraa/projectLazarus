@@ -1,0 +1,7 @@
+object ViewProduto: TViewProduto
+  Left = 274
+  Height = 314
+  Top = 32
+  Width = 545
+  Caption = 'ViewProduto'
+end

@@ -5,7 +5,7 @@ unit view.menu_principal;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls,
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, ExtCtrls,
   view.menu_cliente, Cliente.Repositorio;
 
 type
@@ -14,9 +14,10 @@ type
 
   TViewPrincipal = class(TForm)
     btn_menu_cliente: TButton;
-    btn_menu_produto: TButton;
     btn_menu_pedido: TButton;
+    btn_menu_produto: TButton;
     mmoLog: TMemo;
+    pnlMenu: TPanel;
     procedure btn_menu_clienteClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
   private

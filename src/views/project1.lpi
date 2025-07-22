@@ -70,6 +70,12 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
       </Unit>
+      <Unit>
+        <Filename Value="view.menu_produto.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ViewProduto"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
     </Units>
   </ProjectOptions>
   <CompilerOptions>

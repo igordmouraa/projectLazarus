@@ -14,7 +14,7 @@ uses
   view.menu_principal,
   view.menu_cliente,
   Cliente.Repositorio,
-  view.pesquisa_clientes;
+  view.pesquisa_clientes, view.menu_produto;
 
 {$R *.res}
 
@@ -26,5 +26,6 @@ begin
 
 
   Application.CreateForm(TViewPrincipal, ViewPrincipal);
+  Application.CreateForm(TViewProduto, ViewProduto);
   Application.Run;
 end.

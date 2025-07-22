@@ -37,22 +37,21 @@ procedure TViewPesquisaClientes.FormCreate(Sender: TObject);
 var
   LCliente: TCliente;
 begin
-  // GARANTE que o dataset esteja fechado antes de mudar a estrutura
+
   if cdsControl.Active then
     cdsControl.Close;
 
-  // Limpa definições antigas e cria as novas
   cdsControl.FieldDefs.Clear;
   cdsControl.FieldDefs.Add('Nome', ftString, 100);
   cdsControl.FieldDefs.Add('CPF', ftString, 14);
 
-  // Agora abre o dataset JÁ COM a estrutura correta
-  cdsControl.Open; // "Open" faz o mesmo que "Active := True"
 
-  // Carrega os dados do repositório
+  cdsControl.Open;
+
+
   FClientes := TClienteRepositorio.GetRepo;
 
-  // Preenche o dataset (que já tem os campos corretos)
+
   for LCliente in FClientes do
   begin
     cdsControl.InsertRecord([LCliente.Nome, LCliente.CPF]);
@@ -61,7 +60,7 @@ end;
 
 procedure TViewPesquisaClientes.grdPesquisaDblClick(Sender: TObject);
 var
-  cpfSelecionado: String;
+  cpfSelecionado: string;
   cliente: TCliente;
 begin
   if cdsControl.RecordCount = 0 then
