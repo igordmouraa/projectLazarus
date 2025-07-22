@@ -62,4 +62,14 @@ object ViewPrincipal: TViewPrincipal
     )
     TabOrder = 2
   end
+  object mmoLogPD: TMemo
+    Left = 216
+    Height = 112
+    Top = 264
+    Width = 328
+    Lines.Strings = (
+      'mmoLog'
+    )
+    TabOrder = 3
+  end
 end

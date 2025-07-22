@@ -25,6 +25,12 @@
     </RunParams>
     <RequiredPackages>
       <Item>
+        <PackageName Value="DateTimeCtrlsDsgn"/>
+      </Item>
+      <Item>
+        <PackageName Value="DateTimeCtrls"/>
+      </Item>
+      <Item>
         <PackageName Value="MemDSLaz"/>
       </Item>
       <Item>
@@ -74,6 +80,7 @@
         <Filename Value="view.menu_produto.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="ViewProduto"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
       </Unit>
       <Unit>
@@ -85,7 +92,20 @@
         <Filename Value="view.pesquisa_produtos.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="ViewPesquisaProdutos"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="view.menu_pedido.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ViewPedido"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../repo/pedido.repositorio.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Pedido.Repositorio"/>
       </Unit>
     </Units>
   </ProjectOptions>

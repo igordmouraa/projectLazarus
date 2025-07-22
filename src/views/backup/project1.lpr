@@ -11,6 +11,8 @@ uses
   {$ENDIF}
   Interfaces,
   Forms, memdslaz,
+  //Models
+  uModels,
   //Views
   view.menu_principal,
   view.menu_cliente,
@@ -18,8 +20,7 @@ uses
   view.menu_produto,
   //Repositorios
   Cliente.Repositorio,
-  Produto.Repositorio,
-
+  Produto.Repositorio, view.pesquisa_produtos, view.menu_pedido;
 
 {$R *.res}
 
@@ -31,6 +32,7 @@ begin
 
 
   Application.CreateForm(TViewPrincipal, ViewPrincipal);
-  Application.CreateForm(TViewProduto, ViewProduto);
+  Application.CreateForm(TViewPesquisaProdutos, ViewPesquisaProdutos);
+  Application.CreateForm(TViewPedido, ViewPedido);
   Application.Run;
 end.

@@ -6,8 +6,6 @@ uses
   uModels, StdCtrls, SysUtils;
 
 type
-  TArrClientesModel = Array of TCliente;
-
   TClienteRepositorio = class
     private
       class procedure AlterarCliente(Id: Integer; ABody: TCliente);

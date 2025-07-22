@@ -5,7 +5,7 @@ unit view.pesquisa_produtos;
 interface
 
 uses
-  Classes, SysUtils, DB, MemDS, Forms, Controls, Graphics, Grids, DBGrids, StdCtrls,
+  Classes, SysUtils, DB, MemDS, Forms, Controls, Graphics, DBGrids,
   uModels, Produto.Repositorio, ExtCtrls, Dialogs;
 
 type

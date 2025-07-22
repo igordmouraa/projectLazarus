@@ -10,7 +10,7 @@ uses
   athreads,
   {$ENDIF}
   Interfaces,
-  Forms, memdslaz,
+  Forms, memdslaz, datetimectrls,
   //Models
   uModels,
   //Views
@@ -18,9 +18,12 @@ uses
   view.menu_cliente,
   view.pesquisa_clientes,
   view.menu_produto,
+  view.pesquisa_produtos,
+  view.menu_pedido,
   //Repositorios
   Cliente.Repositorio,
-  Produto.Repositorio, view.pesquisa_produtos;
+  Produto.Repositorio,
+  Pedido.Repositorio;
 
 {$R *.res}
 
@@ -33,5 +36,6 @@ begin
 
   Application.CreateForm(TViewPrincipal, ViewPrincipal);
   Application.CreateForm(TViewPesquisaProdutos, ViewPesquisaProdutos);
+  Application.CreateForm(TViewPedido, ViewPedido);
   Application.Run;
 end.

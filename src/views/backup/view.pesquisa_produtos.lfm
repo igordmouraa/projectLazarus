@@ -7,6 +7,7 @@ object ViewPesquisaProdutos: TViewPesquisaProdutos
   ClientHeight = 316
   ClientWidth = 533
   OnCreate = FormCreate
+  OnDblClick = grdPesquisaDblClick
   object pnlPesquisa: TPanel
     Left = 8
     Height = 306
@@ -24,6 +25,7 @@ object ViewPesquisaProdutos: TViewPesquisaProdutos
       Color = clWindow
       Columns = <>
       DataSource = dsControl
+      ReadOnly = True
       TabOrder = 0
     end
   end

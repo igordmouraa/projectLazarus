@@ -5,7 +5,7 @@ unit view.pesquisa_produtos;
 interface
 
 uses
-  Classes, SysUtils, DB, MemDS, Forms, Controls, Graphics, Grids, DBGrids, StdCtrls,
+  Classes, SysUtils, DB, MemDS, Forms, Controls, Graphics, DBGrids,
   uModels, Produto.Repositorio, ExtCtrls, Dialogs;
 
 type
@@ -37,21 +37,18 @@ procedure TViewPesquisaProdutos.FormCreate(Sender: TObject);
 var
   LProduto: TProduto;
 begin
-
+  // GARANTE que o dataset esteja fechado antes de mudar a estrutura
   if cdsControl.Active then
     cdsControl.Close;
 
   cdsControl.FieldDefs.Clear;
   cdsControl.FieldDefs.Add('CodigoBarras', ftString, 20);
-  cdsControl.FieldDefs.Add('Descricao', ftString, 50);
+  cdsControl.FieldDefs.Add('Descricao', ftString, 100);
   cdsControl.FieldDefs.Add('Preco', ftCurrency);
-
 
   cdsControl.Open;
 
   FProdutos := TProdutoRepositorio.GetRepo;
-
-  cdsControl.Clear;
 
   for LProduto in FProdutos do
   begin
@@ -80,6 +77,7 @@ begin
   end;
 
   Self.ModalResult := mrOk;
+  Self.Close;
 end;
 
 end.

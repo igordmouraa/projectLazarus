@@ -8,8 +8,6 @@ uses
   uModels, StdCtrls, SysUtils, Dialogs;
 
 type
-  TArrProdutosModel = Array of TProduto;
-
   TProdutoRepositorio = class
   private
     class procedure AlterarProduto(AIndex: Integer; AProduto: TProduto);

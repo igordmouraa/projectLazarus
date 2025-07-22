@@ -24,7 +24,9 @@ object ViewPesquisaProdutos: TViewPesquisaProdutos
       Color = clWindow
       Columns = <>
       DataSource = dsControl
+      ReadOnly = True
       TabOrder = 0
+      OnDblClick = grdPesquisaDblClick
     end
   end
   object dsControl: TDataSource

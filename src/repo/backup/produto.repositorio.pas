@@ -87,9 +87,6 @@ begin
   index := Length(ProdutosRepo);
   SetLength(ProdutosRepo, index + 1);
   ProdutosRepo[index] := AProduto;
-
-  ShowMessage(Format('Produto "%s" adicionado. Repositório agora tem %d itens.',
-    [AProduto.Descricao, Length(ProdutosRepo)]));
 end;
 
 class procedure TProdutoRepositorio.ShowProdutosLogs(AppLog: TMemo);

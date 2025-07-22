@@ -50,6 +50,7 @@ object ViewPrincipal: TViewPrincipal
       Width = 165
       Caption = 'Pedido'
       TabOrder = 2
+      OnClick = btnMenuPedidoClick
     end
   end
   object mmoLogP: TMemo
@@ -61,5 +62,15 @@ object ViewPrincipal: TViewPrincipal
       'mmoLog'
     )
     TabOrder = 2
+  end
+  object mmoLogPD: TMemo
+    Left = 216
+    Height = 112
+    Top = 264
+    Width = 328
+    Lines.Strings = (
+      'mmoLog'
+    )
+    TabOrder = 3
   end
 end

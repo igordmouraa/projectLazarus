@@ -6,21 +6,22 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, ExtCtrls,
-  view.menu_cliente, view.menu_produto, Cliente.Repositorio, Produto.Repositorio;
+  view.menu_cliente, view.menu_produto, view.menu_pedido,
+  Cliente.Repositorio, Produto.Repositorio, Pedido.Repositorio;
 
 type
-
   { TViewPrincipal }
-
   TViewPrincipal = class(TForm)
     btnMenuCliente: TButton;
     btnMenuPedido: TButton;
     btnMenuProduto: TButton;
     mmoLog: TMemo;
     mmoLogP: TMemo;
+    mmoLogPD: TMemo;
     pnlMenu: TPanel;
     procedure btnMenuClienteClick(Sender: TObject);
     procedure btnMenuProdutoClick(Sender: TObject);
+    procedure btnMenuPedidoClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
   private
 
@@ -43,21 +44,12 @@ var
 begin
   LCliente := TViewCliente.Create(Self);
   try
-
     LCliente.ShowModal;
-
-
     if LCliente.ModalResult = mrOk then
-    begin
-      //ShowMessage('3 - ModalResult foi OK! Atualizando o memo.');
       TClienteRepositorio.ShowClientesLogs(mmoLog);
-    end;
-
-
   finally
     LCliente.Free;
   end;
-
 end;
 
 procedure TViewPrincipal.btnMenuProdutoClick(Sender: TObject);
@@ -66,27 +58,35 @@ var
 begin
   LProduto := TViewProduto.Create(Self);
   try
-
     LProduto.ShowModal;
-
-
     if LProduto.ModalResult = mrOk then
-    begin
-      //ShowMessage('3 - ModalResult foi OK! Atualizando o memo.');
-      TProdutoRepositorio.ShowProdutosLogs(mmoLog);
-    end;
-
-
+      TProdutoRepositorio.ShowProdutosLogs(mmoLogP);
   finally
     LProduto.Free;
   end;
+end;
 
+procedure TViewPrincipal.btnMenuPedidoClick(Sender: TObject);
+var
+  LPedido: TViewPedido;
+begin
+  LPedido := TViewPedido.Create(Self);
+  try
+    LPedido.ShowModal;
+    if LPedido.ModalResult = mrOk then
+    begin
+      TPedidoRepositorio.ShowPedidosLogs(mmoLogPD);
+    end;
+  finally
+    LPedido.Free;
+  end;
 end;
 
 procedure TViewPrincipal.FormShow(Sender: TObject);
 begin
   TClienteRepositorio.StartRepo();
   TProdutoRepositorio.StartRepo();
+  TPedidoRepositorio.StartRepo();
 end;
 
 end.
