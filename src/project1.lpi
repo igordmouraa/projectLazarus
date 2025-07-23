@@ -4,7 +4,7 @@
     <Version Value="12"/>
     <General>
       <SessionStorage Value="InProjectDir"/>
-      <Title Value="project1"/>
+      <Title Value="projetoTeste"/>
       <Scaled Value="True"/>
       <ResourceType Value="res"/>
       <UseXPManifest Value="True"/>
@@ -25,6 +25,12 @@
     </RunParams>
     <RequiredPackages>
       <Item>
+        <PackageName Value="DateTimeCtrls"/>
+      </Item>
+      <Item>
+        <PackageName Value="MemDSLaz"/>
+      </Item>
+      <Item>
         <PackageName Value="LCL"/>
       </Item>
     </RequiredPackages>
@@ -34,15 +40,79 @@
         <IsPartOfProject Value="True"/>
       </Unit>
       <Unit>
-        <Filename Value="view.menu_principal.pas"/>
+        <Filename Value="views/view.menu_principal.pas"/>
         <IsPartOfProject Value="True"/>
-        <ComponentName Value="Form1"/>
+        <ComponentName Value="ViewPrincipal"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
       </Unit>
       <Unit>
-        <Filename Value="view.menu_cliente.pas"/>
+        <Filename Value="views/view.menu_cliente.pas"/>
         <IsPartOfProject Value="True"/>
-        <ComponentName Value="Form2"/>
+        <ComponentName Value="ViewCliente"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="model/uModels.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uModels"/>
+      </Unit>
+      <Unit>
+        <Filename Value="repo/Cliente.Repositorio.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Cliente.Repositorio"/>
+      </Unit>
+      <Unit>
+        <Filename Value="views/view.pesquisa_clientes.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ViewPesquisaClientes"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="views/view.menu_produto.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ViewProduto"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="repo/Produto.Repositorio.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Produto.Repositorio"/>
+      </Unit>
+      <Unit>
+        <Filename Value="views/view.pesquisa_produtos.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ViewPesquisaProdutos"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="views/view.menu_pedido.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ViewPedido"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="repo/Pedido.Repositorio.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Pedido.Repositorio"/>
+      </Unit>
+      <Unit>
+        <Filename Value="views/view.pesquisa_pedidos.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ViewPesquisaPedidos"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="views/view.detalhe_pedido.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ViewDetalhePedido"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
       </Unit>
     </Units>
@@ -54,9 +124,18 @@
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
+      <!-- A CORREÇÃO PRINCIPAL ESTÁ AQUI -->
+      <OtherUnitFiles Value="views;repo;model"/>
       <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
     </SearchPaths>
+    <CodeGeneration>
+      <TargetCPU Value="x86_64"/>
+      <TargetOS Value="linux"/>
+    </CodeGeneration>
     <Linking>
+      <Debugging>
+        <DebugInfoType Value="dsDwarf3"/>
+      </Debugging>
       <Options>
         <Win32>
           <GraphicApplication Value="True"/>
@@ -78,3 +157,4 @@
     </Exceptions>
   </Debugging>
 </CONFIG>
+

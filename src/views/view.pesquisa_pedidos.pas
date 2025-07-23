@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, memds, DB, Forms, Controls, Graphics, Dialogs, ExtCtrls,
-  DBGrids, Grids, uModels, view.detalhe_pedido, Pedido.Repositorio;
+  DBGrids, uModels, view.detalhe_pedido, Pedido.Repositorio;
 
 type
 

@@ -5,7 +5,7 @@ unit view.pesquisa_clientes;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Grids, DBGrids, StdCtrls,
+  Classes, SysUtils, Forms, Controls, Graphics, DBGrids,
   ExtCtrls, DB, MemDS, Cliente.Repositorio, uModels, Dialogs;
 
 type

@@ -1,24 +1,23 @@
 object ViewPesquisaPedidos: TViewPesquisaPedidos
   Left = 266
-  Height = 417
+  Height = 370
   Top = 32
   Width = 548
   Caption = 'Pedidos'
-  ClientHeight = 417
+  ClientHeight = 370
   ClientWidth = 548
   OnCreate = FormCreate
   object pnlPesquisa: TPanel
     Left = 0
-    Height = 156
-    Top = 261
+    Height = 73
+    Top = 297
     Width = 548
     Align = alBottom
-    Caption = 'pnlPesquisa'
     TabOrder = 0
   end
   object grdPesquisar: TDBGrid
     Left = 0
-    Height = 261
+    Height = 297
     Top = 0
     Width = 548
     Align = alClient
@@ -31,12 +30,12 @@ object ViewPesquisaPedidos: TViewPesquisaPedidos
   end
   object dsControl: TDataSource
     DataSet = cdsControl
-    Left = 504
-    Top = 296
+    Left = 24
+    Top = 320
   end
   object cdsControl: TMemDataset
     FieldDefs = <>
-    Left = 504
-    Top = 336
+    Left = 56
+    Top = 320
   end
 end

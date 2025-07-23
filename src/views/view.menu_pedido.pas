@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls,
-  DBGrids, Grids, DB, MemDS, ExtCtrls, ComCtrls, DateTimePicker,
+  DBGrids, DB, MemDS, ExtCtrls, ComCtrls, DateTimePicker,
   uModels, view.pesquisa_clientes, view.pesquisa_produtos, view.pesquisa_pedidos, Cliente.Repositorio, Produto.Repositorio, Pedido.Repositorio;
 
 type
@@ -17,7 +17,6 @@ type
     btnPesquisarCliente: TButton;
     btnSalvar: TButton;
     btnPesquisarPedidos: TButton;
-    Button1: TButton;
     cdsItens: TMemDataSet;
     dsItens: TDataSource;
     dtpDataPedido: TDateTimePicker;

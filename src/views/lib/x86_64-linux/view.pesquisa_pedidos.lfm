@@ -35,7 +35,7 @@ object ViewPesquisaPedidos: TViewPesquisaPedidos
   end
   object cdsControl: TMemDataset
     FieldDefs = <>
-    Left = 72
+    Left = 56
     Top = 320
   end
 end

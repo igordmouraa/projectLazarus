@@ -17,7 +17,6 @@ type
     btnPesquisarCliente: TButton;
     btnSalvar: TButton;
     btnPesquisarPedidos: TButton;
-    Button1: TButton;
     cdsItens: TMemDataSet;
     dsItens: TDataSource;
     dtpDataPedido: TDateTimePicker;

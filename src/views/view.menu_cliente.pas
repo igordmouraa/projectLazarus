@@ -4,7 +4,7 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, ExtCtrls,
-  MaskEdit, uModels, Cliente.Repositorio, view.pesquisa_clientes, Types;
+  MaskEdit, uModels, Cliente.Repositorio, view.pesquisa_clientes;
 
 type
   TClienteOp = (cpIncluir, cpAlterar);

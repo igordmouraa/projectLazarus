@@ -1,0 +1,41 @@
+object ViewPesquisaProdutos: TViewPesquisaProdutos
+  Left = 266
+  Height = 316
+  Top = 32
+  Width = 533
+  Caption = 'Produtos'
+  ClientHeight = 316
+  ClientWidth = 533
+  OnCreate = FormCreate
+  object pnlPesquisa: TPanel
+    Left = 0
+    Height = 76
+    Top = 240
+    Width = 533
+    Align = alBottom
+    TabOrder = 0
+  end
+  object grdPesquisar: TDBGrid
+    Left = 0
+    Height = 240
+    Top = 0
+    Width = 533
+    Align = alClient
+    Color = clWindow
+    Columns = <>
+    DataSource = dsControl
+    ReadOnly = True
+    TabOrder = 1
+    OnDblClick = grdPesquisaDblClick
+  end
+  object dsControl: TDataSource
+    DataSet = cdsControl
+    Left = 24
+    Top = 256
+  end
+  object cdsControl: TMemDataset
+    FieldDefs = <>
+    Left = 72
+    Top = 256
+  end
+end
